@@ -51,10 +51,27 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
 
       out.write("<html>\n");
+      out.write("<head>\n");
+      out.write("\t<link rel=\"stylesheet\" type=\"text/css\" href=\"css/registerCss.css\">\n");
+      out.write("\t<script type=\"text/javascript\" src=\"js/register.js\"></script>\n");
+      out.write("\t<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css\">\n");
+      out.write("  \t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>\n");
+      out.write("  \t<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>\n");
+      out.write("</head>\n");
       out.write("<body>\n");
-      out.write("<h2>Lets start the DeliverIt Project ;)</h2>\n");
+      out.write("\t<div class=\"container\">\n");
+      out.write("\t <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#signup_modal\">Sign Up</button>\n");
+      out.write("\t  <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#signin_modal\">Sign In</button>\n");
+      out.write("\t ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "signup.jsp", out, false);
+      out.write('\n');
+      out.write('	');
+      out.write(' ');
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "signin.jsp", out, false);
+      out.write("\n");
+      out.write("\t</div>\n");
       out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
