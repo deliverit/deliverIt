@@ -50,15 +50,9 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<div class=\"modal fade\" id=\"signin_modal\" role=\"dialog\">\n");
-      out.write("<div class=\"modal-dialog\">\n");
-      out.write(" \t<div class=\"modal-content\">\n");
-      out.write("\t\t<div class=\"modal-header\">\n");
-      out.write("\t\t   <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n");
-      out.write("\t\t    <h4 class=\"modal-title\">Sign In</h4>\n");
-      out.write("\t\t </div>\n");
-      out.write("\t\t <div class=\"modal-body\">\n");
-      out.write("\t\t  \t<form action=\"\" method=\"post\" role=\"form\">\n");
+      out.write("<div class=\"container\">\n");
+      out.write("  <h2>Sign In</h2>\n");
+      out.write("\t<form action=\"/deliverit/loginForm\" method=\"post\" role=\"form\">\n");
       out.write("\t\t    <div class=\"form-group\">\n");
       out.write("\t\t      <label for=\"email\">Email:</label>\n");
       out.write("\t\t      <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Enter email\">\n");
@@ -73,12 +67,7 @@ public final class signin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t<button type=\"submit\" class=\"btn btn-info btn-lg\">Submit</button> \n");
       out.write("\t\t    \t<button type=\"reset\" class=\"btn btn-info btn-lg\"> Reset</button>\n");
       out.write("\t\t\t</form>\n");
-      out.write("\t\t  </div>\n");
-      out.write("\t\t </div>\n");
-      out.write("\t</div>\n");
-      out.write("</div>\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("</div>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

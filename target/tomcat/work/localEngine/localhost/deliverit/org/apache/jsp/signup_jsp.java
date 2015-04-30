@@ -50,15 +50,9 @@ public final class signup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("<div class=\"modal fade\" id=\"signup_modal\" role=\"dialog\">\n");
-      out.write("<div class=\"modal-dialog\">\n");
-      out.write(" \t<div class=\"modal-content\">\n");
-      out.write("\t\t<div class=\"modal-header\">\n");
-      out.write("\t\t   <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n");
-      out.write("\t\t    <h4 class=\"modal-title\">Sign Up</h4>\n");
-      out.write("\t\t </div>\n");
-      out.write("\t\t <div class=\"modal-body\">\n");
-      out.write("\t\t  \t<form action=\"/deliverit/registerForm\" method=\"post\" role=\"form\">\n");
+      out.write("<div class=\"container\">\n");
+      out.write("  <h2>Sign Up</h2>\n");
+      out.write("\t\t<form action=\"/deliverit/registerForm\" method=\"post\" role=\"form\">\n");
       out.write("\t\t  \t<div class=\"form-group\">\n");
       out.write("\t\t      <label for=\"firstName\">First Name:</label>\n");
       out.write("\t\t      <input type=\"text\" class=\"form-control\" name=\"firstName\" id=\"firstName\" placeholder=\"FirstName\">\n");
@@ -72,6 +66,10 @@ public final class signup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t      <input type=\"email\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"Enter email\">\n");
       out.write("\t\t    </div>\n");
       out.write("\t\t    <div class=\"form-group\">\n");
+      out.write("\t\t      <label for=\"phone\">Phone:</label>\n");
+      out.write("\t\t      <input type=\"phone\" class=\"form-control\" name=\"phone\" id=\"phone\" placeholder=\"Phone No\">\n");
+      out.write("\t\t    </div>\n");
+      out.write("\t\t    <div class=\"form-group\">\n");
       out.write("\t\t      <label for=\"pwd\">Password:</label>\n");
       out.write("\t\t      <input type=\"password\" class=\"form-control\" name=\"pwd\" id=\"pwd\" placeholder=\"Enter password\">\n");
       out.write("\t\t    </div>\n");
@@ -81,11 +79,7 @@ public final class signup_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t    \t<button type=\"submit\" class=\"btn btn-info btn-lg\">Submit</button> \n");
       out.write("\t\t    \t<button type=\"reset\" class=\"btn btn-info btn-lg\"> Reset</button>\n");
       out.write("\t\t  \t</form>\n");
-      out.write("\t\t  </div>\n");
-      out.write("\t\t </div>\n");
-      out.write("\t</div>\n");
       out.write("</div>\n");
-      out.write("\n");
       out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

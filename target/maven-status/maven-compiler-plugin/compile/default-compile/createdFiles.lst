@@ -1,1 +1,4 @@
-com/restaurant/delivetit/RegisterForm.class
+com/restaurant/delivetit/RegisterFormServlet.class
+com/restaurant/Database/DBConnection.class
+com/restaurant/delivetit/LoginFormServlet.class
+com/restaurant/Database/DBCredentials.class

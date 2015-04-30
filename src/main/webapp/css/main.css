@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+@media (min-width: 979px) {
+    body {
+        padding-top: 100px;
+    }
+}
+div.HeadBanner
+{
+  
+   border-width: 10px;
+   border-bottom-width:2px;
+   border-bottom-style: solid;
+}
+div.headerClass
+{
+   
+    align : right;
+}
+div.logoClass
+{
+	vertical-align : left;
+	
+}
+div.logoClass img
+{
+
+	vertical-align : left;
+	height : 50px;
+}
+
+div.topContentClass{    
+   
+    display: table-cell;
+    vertical-align: middle;
+   	height: 100px;
+}
+
+div.TopTabClass
+{
+	 
+	  height: 50px;
+}
+
+div.sliderContent
+{
+	 background-color: #00FFCC;
+	    margin: 0 auto;
+   		height: 250px;
+}
+
+div.center
+{
+	  margin: 0 auto;
+    width: 80%;
+}
+
+
+.navbar-fixed-bottom
+{
+	
+	background-color: #006699;
+}
+
+

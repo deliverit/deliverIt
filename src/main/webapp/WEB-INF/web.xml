@@ -8,11 +8,20 @@
                
 	<servlet>
 		<servlet-name>registerServlet</servlet-name>
-	  	<servlet-class>com.restaurant.delivetit.RegisterForm</servlet-class>
+	  	<servlet-class>com.restaurant.delivetit.RegisterFormServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>registerServlet</servlet-name>
 	  	<url-pattern>/registerForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+	  	<servlet-class>com.restaurant.delivetit.LoginFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+	  	<url-pattern>/loginForm</url-pattern>
 	</servlet-mapping>
                
 </web-app>
