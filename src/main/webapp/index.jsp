@@ -8,6 +8,7 @@
 	<script src="js/main.js"></script>
 	<script src="js/jquery.easing-1.3.js"></script>
 	<script src="js/jquery.iosslider.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
 
 </head>
 <body>
@@ -20,7 +21,7 @@
 				    <li><a data-toggle="tab" href="#signupmenu">Sign Up</a></li>
 			  	</ul>
 				<div id="logoID" class="logoClass">
-					<img src="images/test2.png">
+					<a href="#home"><img src="images/test2.png"></a>
 				</div>
 				
 				<div id="topTabID" class="TopTabClass">
@@ -41,33 +42,38 @@
        <jsp:include page="signup.jsp"/>
     </div>
     
-    <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div id="aboutus" class="tab-pane fade">
+      <jsp:include page="aboutus.jsp"/>
     </div>
     
-    <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    <div id="services" class="tab-pane fade">
+   		<jsp:include page="service.jsp"/>
     </div>
-    
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <div id="team" class="tab-pane fade">
+   		<jsp:include page="team.jsp"/>
     </div>
-    <div id="menu4" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    <div id="gallery" class="tab-pane fade">
+     	<jsp:include page="imagegallery.jsp"/>
+    </div>
+    <div id="contactus" class="tab-pane fade">
+     	 <jsp:include page="contactus.jsp"/>
     </div>
  </div>
 			
 				
-			<nav class="navbar navbar-inverse navbar-fixed-bottom">
-			  <div class="container-fluid">
-			    <jsp:include page="footer.jsp"/>
-			   </div>
-			</nav>
-			  
+			<nav class="navbar navbar-default  navbar-fixed-bottom" role="navigation">
+    <div class="container text-center">
+    <p>
+    	<a href="">About us </a> | 
+    	<a href=""> Quality Policy </a> | 
+    	<a href=""> Admin Login  </a> |
+    	<a href=""> Enquiry  </a> 
+    </p>
+    <p class="navbar-text col-md-12 col-sm-12 col-xs-12">
+        
+        Copyright &copy; sukanyaMani autocraft</p>
+    </div>
+</nav>
 				
 
 

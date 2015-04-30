@@ -53,10 +53,11 @@ public final class toptabs_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write(" \t<ul class=\"nav nav-pills pull-right\">\n");
       out.write("\t    <li class=\"active\"><a data-toggle=\"pill\" href=\"#home\">Home</a></li>\n");
-      out.write("\t    <li><a data-toggle=\"tab\" href=\"#menu1\">AboutUs</a></li>\n");
-      out.write("\t    <li><a data-toggle=\"tab\" href=\"#menu2\">Services</a></li>\n");
-      out.write("\t    <li><a data-toggle=\"tab\" href=\"#menu3\">Gallery</a></li>\n");
-      out.write("\t    <li><a data-toggle=\"tab\" href=\"#menu4\">Contact Us</a></li>\n");
+      out.write("\t    <li><a data-toggle=\"tab\" href=\"#aboutus\">AboutUs</a></li>\n");
+      out.write("\t    <li><a data-toggle=\"tab\" href=\"#services\">Services</a></li>\n");
+      out.write("\t    <li><a data-toggle=\"tab\" href=\"#team\">Team</a></li>\n");
+      out.write("\t    <li><a data-toggle=\"tab\" href=\"#gallery\">Gallery</a></li>\n");
+      out.write("\t    <li><a data-toggle=\"tab\" href=\"#contactus\">Contact Us</a></li>\n");
       out.write("  \t</ul>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
